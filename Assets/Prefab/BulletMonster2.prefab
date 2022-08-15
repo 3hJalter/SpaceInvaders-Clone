@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -3403569210035183490}
   m_Layer: 0
   m_Name: BulletMonster2
-  m_TagString: Untagged
+  m_TagString: BulletMonster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

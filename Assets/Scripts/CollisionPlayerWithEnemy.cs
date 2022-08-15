@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionPlayerWithEnemy : MonoBehaviour
 {
@@ -11,5 +12,10 @@ public class CollisionPlayerWithEnemy : MonoBehaviour
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.LoadSceneAsync(0);
     }
 }

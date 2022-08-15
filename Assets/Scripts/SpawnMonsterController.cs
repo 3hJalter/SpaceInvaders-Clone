@@ -6,12 +6,13 @@ public class SpawnMonsterController : MonoBehaviour
 {
     public GameObject monster1;
     public GameObject monster2;
-    public float interval = 2; 
+    public float interval = 3;
+    public float startInterval = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnMonster", interval, interval);   
+        InvokeRepeating("SpawnMonster", startInterval, interval);   
     }
 
     private void SpawnMonster()

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollisionPlayerBulletController : MonoBehaviour
 {
+    private int count = 0;
     // Start is called before the first frame update
     private void OnCollisionEnter2D(Collision2D collision)
     {
